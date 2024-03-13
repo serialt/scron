@@ -1,0 +1,14 @@
+[Unit]
+Description=scron
+Documentation=https://github.com/serialt/scron
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/scron
+ExecStart=/opt/scron/scron 
+KillMode=process
+Restart=on-failure
+RestartSec=50s
+
+[Install]
+WantedBy=multi-user.target

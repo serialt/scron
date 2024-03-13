@@ -1,0 +1,11 @@
+log:
+  level: debug
+  # file: 
+cron:
+  - name: test1
+    time: "@every 1s"
+    action: "echo 'hello github'"
+
+  - name: test1
+    time: "@every 1s"
+    action: "echo 'hello google'"
